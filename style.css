@@ -174,42 +174,42 @@ section{
     text-decoration: none;
 }
 
-.manage-section{
-    /* border: 1px solid blue; */
-    background-color: #1BC100;
-    display: flex;
-    flex-direction: column;
-    width: 113%;
-    align-self: flex-end;
-    border-radius: 0px 15px 15px 0px;
-}
-
 .aux{
     /* border: 1px solid; */
     height: 14%;
     width: 100%;
     margin-top: 12%;
 }
-.manage-section div{
+
+.manage-main{
+    /* border: 1px solid blue; */
+    background-color: #1BC100;
+    width: 113%;
+    align-self: flex-end;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.manage-main div{
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    /* border-radius: 0px 15px 15px 0px; */
-    /* height: 33%; */
-    /* width: 100%; */
     padding-left: 11%;
 }
 
-.manage-2_1 {
-    border-radius: 0px 15px 0px 0px;
+.manage{
+    /* border: 1px solid; */
+    /* border-radius: 0px 15px 15px 0px; */
+    display: none;
+    overflow: hidden;
     border-bottom: #F5F5F5 1px solid;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
 }
-.manage-2_2{
-    border-bottom: #F5F5F5 1px solid;
+.manage.active{
+    display: block;
+    max-height: 100px;  /* ?????? la animacion cambia entre vh, px y % */
 }
-.manage-2_3 {
-    border-radius: 0px 0px 15px 0px;
-}
+
 /* ---------------------------------------------MAIN CONTENT------------------------------------------------- */
 .content{
     /* border: 1px solid blue; */
