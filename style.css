@@ -156,7 +156,7 @@ section{
 /* ---------------------------------------MENU OPTIONS------------------------------------- */
 
 .menu-options{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #F5F5F5;
     gap: calc(12%);
     display: flex;
@@ -175,7 +175,7 @@ section{
 }
 
 .manage-section{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: #1BC100;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ section{
     margin-top: 12%;
 }
 .manage-section div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     /* border-radius: 0px 15px 15px 0px; */
