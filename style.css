@@ -169,6 +169,7 @@ section{
     padding-top: calc(7%);
     padding-left: 2%;
 }
+
 .menu-options a {
     color: #000000;
     text-decoration: none;
@@ -187,19 +188,20 @@ section{
     width: 113%;
     align-self: flex-end;
     border-radius: 0px 15px 15px 0px;
+    /* flex: none; */
 }
 
-.manage-main div{
-    /* border: 1px solid red; */
+.manage-b{
     display: flex;
     align-items: center;
     padding-left: 11%;
 }
 
 .manage{
-    /* border: 1px solid; */
-    /* border-radius: 0px 15px 15px 0px; */
-    display: none;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-left: 11%;
+    display: display;
     overflow: hidden;
     border-bottom: #F5F5F5 1px solid;
     transition: max-height 0.5s ease-in-out;
@@ -210,12 +212,16 @@ section{
     max-height: 100px;  /* ?????? la animacion cambia entre vh, px y % */
 }
 
+.manage-main a:hover{
+    color: #F5F5F5;
+    transition: ease-in-out 0.2s;
+}
+
 /* ---------------------------------------------MAIN CONTENT------------------------------------------------- */
 .content{
     /* border: 1px solid blue; */
     width: 65%;
     height: 100%;
-    /* display: none; */
     flex-direction: column;
     overflow: hidden;
 }
