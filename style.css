@@ -158,13 +158,13 @@ section{
 .menu-options{
     /* border: 1px solid red; */
     background-color: #F5F5F5;
-    gap: calc(12%);
+    /* gap: calc(14%); */
     display: flex;
     height: 90%;
     width: 35%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     border-radius: 15px;
     padding-top: calc(7%);
     padding-left: 2%;
@@ -175,11 +175,25 @@ section{
     text-decoration: none;
 }
 
-.aux{
-    /* border: 1px solid; */
-    height: 14%;
+.aux2{
+    border: 1px solid;
+    /* height: 15%; */
+    /* height: 8%; */
     width: 100%;
     margin-top: 12%;
+}
+
+.cont-main{
+    display: flex;
+    /* border: 1px solid black; */
+    /* height: calc(35%); */
+    height: 10%;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    /* gap: 40%; */
+    align-items: end;
+    margin-top: 32%;
 }
 
 .manage-main{
@@ -189,6 +203,7 @@ section{
     align-self: flex-end;
     border-radius: 0px 15px 15px 0px;
     /* flex: none; */
+    margin-top: 30%;
 }
 
 .manage-b{
@@ -209,7 +224,7 @@ section{
 }
 .manage.active{
     display: block;
-    max-height: 100px;  /* ?????? la animacion cambia entre vh, px y % */
+    max-height: 100px;  /*?????? la animacion cambia entre vh, px y %*/
 }
 
 .manage-main a:hover{

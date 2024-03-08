@@ -48,29 +48,33 @@
                         <a href="#">Regresar</a>
                     </div>
                 </div>
-                <div id="mainDiv1" class="manage-main">
-                    <div id="1" class="manage active">
-                        <a href="#">Gestionar médicos</a>
-                    </div>
-                    <div id="2" class="manage">
-                        <a href="#med-register">Registrar médico</a>
-                    </div>
-                    <div id="3" class="manage">
-                        <a href="#med-panel">Panel médico</a>
-                    </div>
-                </div>
-                <div id="mainDiv2" class="manage-main">
-                    <div id="4" class="manage active">
-                        <a href="#">Gestionar pacientes</a>
-                    </div>
-                    <div id="5" class="manage">
-                        <a href="#patient-register">Registrar paciente</a>
-                    </div>
-                    <div id="6" class="manage">
-                        <a href="#patient-list">Lista paciente</a>
+                <div class="cont-main">
+                    <div id="mainDiv1" class="manage-main">
+                        <div id="1" class="manage active">
+                            <a href="#">Gestionar médicos</a>
+                        </div>
+                        <div id="2" class="manage">
+                            <a href="#med-register">Registrar médico</a>
+                        </div>
+                        <div id="3" class="manage">
+                            <a href="#med-panel">Panel médico</a>
+                        </div>
                     </div>
                 </div>
-                <div class="aux"></div>
+                <div class="cont-main">
+                    <div id="mainDiv2" class="manage-main">
+                        <div id="4" class="manage active">
+                            <a href="#">Gestionar pacientes</a>
+                        </div>
+                        <div id="5" class="manage">
+                            <a href="#patient-register">Registrar paciente</a>
+                        </div>
+                        <div id="6" class="manage">
+                            <a href="#patient-list">Lista paciente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="aux2"></div> -->
             </div>
 
         </div>
@@ -250,7 +254,13 @@
                         <div class="pat-survey-container">
                             <div class="pat-question">
                                 <label for="pat-id-type">Tipo de Documento</label>
-                                <input type="text" required>
+                                <select name="pat-id-type" id="pat-id-type">
+                                    <option value="null"></option>
+                                    <option value="CC">Cédula de Ciudadanía</option>
+                                    <option value="TI">Tarjeta de Identidad</option>
+                                    <option value="RC">Registro Civil</option>
+                                    <option value="PAS">Pasaporte</option>
+                                </select>
                             </div>
                             <div class="pat-question">
                                 <label for="pat-id-number">No. Documento</label>
