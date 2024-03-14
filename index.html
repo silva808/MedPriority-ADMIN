@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+
 <header>
     <div class="logo">
         <div class="logo-pic"></div>
@@ -19,7 +21,6 @@
     </div>
 </header>
 
-<body>
     <section>
 
         <!-- -------------------MENU------------------- -->
@@ -329,7 +330,7 @@
                                 <td>Maria Anders</td>
                                 <td>Germany</td>
                                 <td>21</td>
-                                <td><button>Editar</button></td>
+                                <td><button data-modal-target="#modal">Editar</button></td>
                                 <td><button>Eliminar</button></td>
                             </tr>
                             <tr>
@@ -411,6 +412,23 @@
 
         </main>
     </section>
+
+    <!-- -------------------------------MODAL------------------------------------------ -->
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <span>Title</span>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit. 
+            Quam corrupti ab et veritatis maxime harum 
+            officia quod voluptatibus beatae possimus, 
+            quaerat voluptatum ut iusto eum perspiciatis 
+            corporis. Deleniti, odit sit?
+        </div>
+    </div>
+    <div id="overlay"></div>
 
     <script src="script.js"></script>
 
