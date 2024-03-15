@@ -247,7 +247,7 @@ section{
     height: 100%;
     width: 100%;
     display: flex;
-    display: none;
+    /* display: none; */
     justify-content: start;
     align-items: center;
 }
@@ -369,7 +369,7 @@ section{
     height: 100%;
     width: 100%;
     display: flex;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
@@ -432,7 +432,7 @@ table button{
     height: 100%;
     width: 100%;
     display: flex;
-    display: none;
+    /* display: none; */
     justify-content: start;
     align-items: center;
 }
