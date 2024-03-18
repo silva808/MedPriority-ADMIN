@@ -15,51 +15,68 @@ body{
 }
 
 header{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     height: 12%;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* gap: calc(60%); */
     align-items: center;
     border-bottom: #1BC100 solid;
 }
+.nav{
+    display: flex;
+    border: 1px solid blue;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* gap: 10%; */
+}
 .logo{
     display: flex;
-    /* border: 1px solid; */
+    border: 1px solid;
     align-items: center;
-    justify-content: end;
-    height: 60%;
-    width: 15%;
+    justify-content: start;
+    height: 80%;
+    width: 70%;
     gap: calc(5%);
 }
 .logo:hover{
     cursor: pointer;
 }
 .logo-pic{
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
     height: 100%;
-    width: 25%;
-    background-image: url(img/logo.jpeg);
+    width: calc(10%);
+    background-image: url(img/logo.svg);
     background-size: calc(100%) calc(100%);
 }
 .logo-text{
     background: linear-gradient(to right, #006400, #8fbc8f);
     -webkit-background-clip: text;
     color: transparent;
+    font-size: xx-large;
 }
 .user{
     display: flex;
-    /* border: 1px solid; */
+    border: 1px solid;
     align-items: center;
-    justify-content: start;
-    height: 60%;
-    width: 15%;
+    justify-content: end;
+    height: 80%;
+    width: 30%;
     gap: calc(5%);
 }
+.user-name{
+    font-size: x-large;
+}
 .user-pic{
-    /* border: 1px solid fuchsia; */
+    border: 1px solid fuchsia;
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-image: url(img/icon.svg);
     background-size: calc(100%) calc(100%);
 }
@@ -76,7 +93,7 @@ section{
 }
 
 .menu{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     height: 100%;
     width: 35%;
@@ -86,7 +103,7 @@ section{
 }
 
 .menu-buttons{
-    /* border: 1px solid rgb(0, 102, 255); */
+    border: 1px solid rgb(0, 102, 255);
     background-color: #1BC100;
     height: 90%;
     width: 15%;
@@ -102,7 +119,7 @@ section{
 .menu-buttons a {
     color: #FFFFFF;
     text-decoration: none;
-    /* border: 1px solid; */
+    border: 1px solid;
     margin-top: calc(-50%);
 }
 
@@ -156,12 +173,12 @@ section{
 /* ---------------------------------------MENU OPTIONS------------------------------------- */
 
 .menu-options{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background-color: #F5F5F5;
     /* gap: calc(14%); */
     display: flex;
     height: 90%;
-    width: 35%;
+    width: calc(35%);
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
@@ -175,19 +192,11 @@ section{
     text-decoration: none;
 }
 
-.aux2{
-    border: 1px solid;
-    /* height: 15%; */
-    /* height: 8%; */
-    width: 100%;
-    margin-top: 12%;
-}
-
 .cont-main{
     display: flex;
     /* border: 1px solid black; */
     /* height: calc(35%); */
-    height: 10%;
+    height: 12%;
     flex-direction: column;
     width: 100%;
     /* justify-content: space-evenly; */
@@ -216,7 +225,6 @@ section{
     /* border: 1px solid red; */
     align-items: center;
     padding-left: 11%;
-    display: display;
     overflow: hidden;
     border-bottom: #F5F5F5 1px solid;
     transition: max-height 0.5s ease-in-out;
@@ -230,6 +238,70 @@ section{
 .manage-main a:hover{
     color: #F5F5F5;
     transition: ease-in-out 0.2s;
+}
+
+/* ---------------------------------------------RESPONSIVE----------------------------------------------------------- */
+
+
+@media(max-width:1030px){
+    .logo, .user{
+        height: 50%;
+    }
+    .logo-text, .user-name{
+        font-size:x-large;
+    }
+    
+    .survey-main .img-container, 
+    .pat-survey-main .img-pat-container{
+        display:none;
+    }
+
+    .survey-main .survey-container,
+    .pat-survey-main .pat-survey-container{
+        width: 100%;
+        padding: 1%;
+    }
+
+    .menu-options{
+        display: none;
+    }
+
+    .menu-buttons{
+        width: 30%;
+        border-radius: 15px;
+    }
+}
+@media(max-width:685px){
+    .menu{
+        width: 25%;
+    }
+
+    .menu-buttons{
+        width: 60%;
+        border-radius: 15px;
+    }
+}
+@media(max-width:485px){
+    .user{
+        display: none;
+    }
+
+    .logo-pic{
+        width: 70px;
+    }
+
+    .nav{
+        width: 100%;
+    }
+    
+    .menu-options{
+        display: none;
+    }
+
+    .content .med-register{
+        justify-content: end;
+    }
+
 }
 
 /* ---------------------------------------------MAIN CONTENT------------------------------------------------- */
@@ -257,7 +329,7 @@ section{
 }
 
 .survey-frame{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 90%;
     width: 90%;
     display: flex;
@@ -269,22 +341,24 @@ section{
     box-shadow: 5px 20px 10px rgba(0, 0, 0, 0.2);
 }
 .survey-main{
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
     display: flex;
     width: 100%;
     height: 100%;
+    /* justify-content: center; */
 }
 .survey-container{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: calc(1%);
     padding-left: 2%;
+    /* align-items: center; */
 }
 .question{
-    /* border: 1px solid; */
+    border: 1px solid;
     height: 11%;
     width: 100%;
     display: flex;
@@ -313,7 +387,7 @@ section{
     background-size: calc(100%) calc(100%);
 }
 .save{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 10%;
     width: 100%;
     display: flex;
@@ -339,9 +413,10 @@ section{
 }
 
 .img-container{
-    /* border: 1px solid; */
+    border: 1px solid;
     width: 40%;
     display: flex;
+    /* display: none; */
     justify-content: center;
     /* align-items: center; */
 }
