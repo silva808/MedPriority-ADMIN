@@ -280,6 +280,22 @@ section{
         width: 60%;
         border-radius: 15px;
     }
+    .content .med-register{
+        justify-content: end;
+    }
+
+    .med-register .survey-frame{
+        width: 95%;
+    }
+}
+@media(max-width:600px){
+    .med-register .survey-frame p{
+        font-size: x-large;
+    }
+    .med-register .survey-frame label{
+        font-size: small;
+        width: 60%;
+    }
 }
 @media(max-width:485px){
     .user{
@@ -298,9 +314,9 @@ section{
         display: none;
     }
 
-    .content .med-register{
+    /* .content .med-register{
         justify-content: end;
-    }
+    } */
 
 }
 
