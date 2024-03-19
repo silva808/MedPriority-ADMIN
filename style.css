@@ -243,7 +243,7 @@ section{
 /* ---------------------------------------------RESPONSIVE----------------------------------------------------------- */
 
 
-@media(max-width:1030px){
+@media(max-width:1300px){
     .logo, .user{
         height: 50%;
     }
@@ -296,27 +296,30 @@ section{
         font-size: small;
         width: 60%;
     }
+    .logo-pic{
+        width: 70px;
+    }
 }
 @media(max-width:485px){
     .user{
         display: none;
     }
 
-    .logo-pic{
-        width: 70px;
-    }
-
     .nav{
         width: 100%;
     }
     
-    .menu-options{
+    .menu{
         display: none;
     }
 
-    /* .content .med-register{
-        justify-content: end;
-    } */
+    section .content{
+        width: 100%;
+    }
+
+    .content .med-register{
+        justify-content: center;
+    }
 
 }
 
