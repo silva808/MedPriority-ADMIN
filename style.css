@@ -814,6 +814,7 @@ table button{
     align-items: center;
     justify-content: space-between;
     padding: 2%;
+    border: 1px solid red;
 }
 
 .modal-header span{
@@ -832,6 +833,7 @@ table button{
 
 .modal-body{
     padding: 2%;
+    border: 1px solid blue;
 }
 
 #overlay{
